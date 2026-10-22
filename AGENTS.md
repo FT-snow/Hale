@@ -1,0 +1,1 @@
+Hale uses TigerData-compatible PostgreSQL for application data and Backboard AI for server-side recall. Keep database access and provider credentials in server-only modules; never expose `TIGERDATA_DATABASE_URL`, `BACKBOARD_API_KEY`, or provider keys to browser code. Apply database changes through `db/schema.sql` and keep API authorization checks close to SQL data access.
